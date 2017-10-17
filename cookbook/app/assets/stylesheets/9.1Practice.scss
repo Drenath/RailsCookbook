@@ -1,0 +1,39 @@
+$mainColor: #999;
+$width: 960px;
+header, footer {
+  background-color: $mainColor;
+}
+.wrapper {
+  border: 1px solid $mainColor;
+  width: $width;
+}
+.content {
+  width: $width * 0.75;
+}
+nav {
+  a {
+    color: #fff
+  }
+}
+nav {
+  background-color: #ddd;
+  float: left;
+  width: 100%;
+
+  &>ul {
+    margin: 0;
+    padding: 0;
+    
+    &>li {
+      margin-right: 1%;
+      color: #fff;
+        
+      &>a{
+        color: inherit;
+        &:hover, &:focus{
+        color: #000;
+        }
+      }
+    }
+  }
+}
